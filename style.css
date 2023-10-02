@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+main {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px auto;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  background-color: #EEEEEE;
+}
+
+.card-image {
+  width: auto;
+  height: 150px;
+  background-image: none;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#step1 .card-image {
+  background-image: url(img/flow01.png);
+}
+#step2 .card-image {
+  background-image: url(img/flow02.png);
+}
+#step3 .card-image {
+  background-image: url(img/flow03.png);
+}
+
+.card-title {
+  margin-top: 15px;
+}
+
+.card-content {
+  margin-top: 5px;
+}
+
+.card-stepnum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  background-color: #FF9A4B;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #AAAAAA;
+}
+
+@media screen and (max-width: 768px) {
+  main{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
